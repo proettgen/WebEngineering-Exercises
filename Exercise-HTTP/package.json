@@ -1,0 +1,12 @@
+{
+    "name": "simple-backend",
+    "version": "1.0.0",
+    "description": "This is a simple node backend",
+    "main": "main.js",
+    "scripts": {
+        "start": "node main.js"
+    },
+    "dependencies": {
+        "express": "^4.21.2"
+    }
+}
