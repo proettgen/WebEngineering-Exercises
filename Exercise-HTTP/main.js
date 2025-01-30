@@ -168,5 +168,3 @@ app.delete("/users/:id", (req, res) => {
 
   return res.status(204).send()
 })
-
-
