@@ -1,0 +1,86 @@
+:root{
+    /*light mode*/
+    --backgroundColor: #FFF2F2;
+    --textColor: #1d2145;
+    --cardColor: #dde0f0;
+    --buttonColor: #6c79b3;
+    --buttonTextColor: #FFF2F2;
+    --heighlightColor: #A9B5DF;
+}
+.darkmode{
+    --backgroundColor: #101226;
+    --textColor: #ecddd6;
+    --cardColor: #6c79b3;
+    --buttonColor: #ecddd6;
+    --buttonTextColor: #1d2145;
+    --heighlightColor: #1d2145;
+}
+
+#registerButton{
+    background-color: var(--heighlightColor);
+    margin-right: 20px;
+    
+    button{
+        cursor: pointer;
+        background-color: var(--buttonColor);
+        color: var(--buttonTextColor);
+        border: 1px solid var(--buttonColor);
+        border-radius: 10px;
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+}
+
+header {
+    background-color: var(--heighlightColor);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+
+    h1{
+        margin-left: 20px;
+        background-color: var(--heighlightColor);
+        grid-column: 1;
+        font-size: 40px;
+    }
+    a{
+        grid-column: 3;
+        text-decoration: none;
+    }
+}
+
+ul {
+    padding: 0;
+    margin: 0px, 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--backgroundColor);
+    gap: 20px;
+
+    li{
+        gap: 20px;
+        padding: 20px;
+        margin: 0;
+        font-size: 30px;
+        background-color: var(--cardColor);
+        border: 1px solid var(--cardColor);
+        border-radius: 10px;
+        height: 200px;
+        width: 300px;
+        overflow: hidden;
+
+        a{
+            text-decoration: none;
+            background-color: var(--cardColor);
+            color: var(--textColor);
+        }
+    }
+}

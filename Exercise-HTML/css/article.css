@@ -1,0 +1,59 @@
+:root{
+    /*light mode*/
+    --backgroundColor: #FFF2F2;
+    --textColor: #1d2145;
+    --cardColor: #dde0f0;
+    --buttonColor: #6c79b3;
+    --buttonTextColor: #FFF2F2;
+    --heighlightColor: #A9B5DF;
+}
+.darkmode{
+    --backgroundColor: #101226;
+    --textColor: #ecddd6;
+    --cardColor: #6c79b3;
+    --buttonColor: #ecddd6;
+    --buttonTextColor: #1d2145;
+    --heighlightColor: #1d2145;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+}
+header {
+    background-color: var(--heighlightColor);
+
+    h1{
+        padding: 5px 20px;
+        margin: 0;
+        background-color: var(--heighlightColor);
+        font-size: 40px;
+    }
+    h2{
+        margin: 0;
+        padding: 5px 20px;
+        background-color: var(--heighlightColor);
+        font-size: 30px;
+    }
+}
+article{
+    background-color: var(--cardColor);
+    border: 1px solid var(--cardColor);
+    border-radius: 5px;
+    color: var(--textColor);
+    margin: 20px;
+    padding: 10px 15px;
+    font-size: 15px;
+    p{
+        margin: 0;
+        padding: 0px 0px 10px 0px;
+    }
+}
+
+img{
+    height: 400px;
+    width: 400px;
+}

@@ -1,0 +1,103 @@
+:root{
+    /*light mode*/
+    --backgroundColor: #FFF2F2;
+    --textColor: #1d2145;
+    --cardColor: #dde0f0;
+    --buttonColor: #6c79b3;
+    --buttonTextColor: #FFF2F2;
+    --heighlightColor: #A9B5DF;
+}
+.darkmode{
+    --backgroundColor: #101226;
+    --textColor: #ecddd6;
+    --cardColor: #6c79b3;
+    --buttonColor: #ecddd6;
+    --buttonTextColor: #1d2145;
+    --heighlightColor: #1d2145;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+}
+
+header {
+    background-color: var(--heighlightColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+header a button {
+    cursor: pointer;
+    background-color: var(--buttonColor);
+    color: var(--buttonTextColor);
+    border: 1px solid var(--buttonColor);
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--cardColor);
+    border-radius: 10px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--textColor);
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--buttonColor);
+    box-shadow: 0 0 5px var(--buttonColor);
+}
+
+button {
+    background-color: var(--buttonColor);
+    color: var(--buttonTextColor);
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+}
+
+button:hover {
+    background-color: var(--heighlightColor);
+}
+
+button:active {
+    background-color: var(--textColor);
+    color: var(--buttonColor);
+}
